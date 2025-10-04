@@ -1,0 +1,45 @@
+.user-list-container {
+  padding: 20px;
+}
+
+.user-card {
+  transition: transform 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+}
+
+.user-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.user-name {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #0d6efd;
+  margin-bottom: 0.5rem;
+}
+
+.user-username {
+  font-size: 0.95rem;
+  font-style: italic;
+}
+
+.user-card .card-text {
+  font-size: 0.9rem;
+  line-height: 1.8;
+  color: #495057;
+}
+
+.user-card .card-text strong {
+  color: #212529;
+}
+
+@media (max-width: 768px) {
+  .user-list-container {
+    padding: 15px;
+  }
+
+  .user-name {
+    font-size: 1.1rem;
+  }
+}

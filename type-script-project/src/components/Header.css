@@ -1,0 +1,78 @@
+.header-navbar {
+  background-color: #212529 !important;
+  padding: 0.75rem 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header-brand {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #ffffff !important;
+  letter-spacing: 0.5px;
+}
+
+/* --- Mobile Toggle Styles --- */
+.navbar-dark .navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.25);
+}
+
+.navbar-dark .navbar-toggler:focus {
+  box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 0.25);
+}
+
+/* --- Nav Link Styles (Mobile First Approach) --- */
+
+/* Add space above the links when dropdown is open */
+.navbar-collapse {
+  padding-top: 0.5rem;
+}
+
+/* Styles for links on mobile dropdown */
+.header-navbar .nav-link {
+  color: #adb5bd !important;
+  padding: 0.75rem 0 !important; /* Vertical padding, no horizontal */
+  font-size: 1.2rem;
+}
+
+.header-navbar .nav-link:hover {
+  color: #ffffff !important;
+}
+
+.header-navbar .nav-link.active {
+  color: #ffffff !important;
+  font-weight: 500;
+}
+
+/* --- Desktop Overrides (for screens lg and up: >=992px) --- */
+@media (min-width: 992px) {
+  .navbar-collapse {
+    padding-top: 0; /* Reset padding for desktop */
+  }
+
+  /* Target the Nav container to add space from the Brand */
+  .navbar-collapse .navbar-nav {
+    margin-left: 1.5rem;
+  }
+
+  /* Styles for links on desktop */
+  .header-navbar .nav-link {
+    color: #a0a0a0 !important;
+    padding: 0.5rem 1rem !important; /* Restore horizontal padding */
+    margin: 0 0.25rem;
+    font-size: 1rem; /* Reset font size for desktop */
+    transition: color 0.3s;
+  }
+
+  .header-navbar .nav-link:hover,
+  .header-navbar .nav-link.active {
+    color: #ffffff !important;
+    font-weight: normal; /* Reset font-weight from mobile active */
+  }
+}
+
+/* Responsive font size for the brand on smaller screens */
+@media (max-width: 991px) {
+  .header-brand {
+    font-size: 1.25rem;
+  }
+}
